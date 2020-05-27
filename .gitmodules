@@ -1,0 +1,9 @@
+[submodule "ext/SDL2"]
+	path = ext/SDL2
+	url = https://github.com/SDL-mirror/SDL.git
+[submodule "ext/imgui"]
+	path = ext/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "ext/imnodes"]
+	path = ext/imnodes
+	url = https://github.com/Nelarius/imnodes.git
