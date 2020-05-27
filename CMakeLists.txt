@@ -17,6 +17,21 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
     endif()
 endif()
 
+# sdl2
 add_subdirectory(ext/SDL2)
 
+# dear imgui
+add_library(imgui
+        ext/imgui/imgui.cpp
+        ext/imgui/imgui_draw.cpp
+        ext/imgui/imgui_widgets.cpp)
+target_include_directories(imgui PUBLIC ext/imgui/)
+
+# imnodes
+add_library(imnodes
+        ext/imnodes/imnodes.cpp)
+target_include_directories(imnodes PUBLIC ext/imnodes/)
+target_link_libraries(imnodes PUBLIC imgui)
+
+# src
 add_subdirectory(src)

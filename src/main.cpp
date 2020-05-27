@@ -2,7 +2,8 @@
 #include <iostream>
 #include <thread>
 #include <cmath>
-#include <SDL2/SDL.h>
+
+#include <SDL.h>
 
 void callback(void* userdata, Uint8* stream, int len)
 {
